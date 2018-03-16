@@ -16,15 +16,26 @@ public class ClickController {
 	private Button minusbutton;
 	/** The counter that records button clicks. */
 	private Counter counter;
-
-	
+	/**
+	 * Set the counter 
+	 * @param counter is the counter that want to set.
+	 */
+	public void setCounter(Counter counter) {
+		this.counter = counter;
+	}
+	/**
+	 * The add counter when press + button.
+	 * @param event is the event that press + button.
+	 */
 	public void plusButtonHandler(ActionEvent event) {
-		//TODO add 1 to counter
-		System.out.println("TODO: add 1 to counter and delete this pritnln");
+		counter.add(1);
 	}
 	
-	
+	/**
+	 * The minus counter when press - button.
+	 * @param event is the event that press - button.
+	 */	
 	public void minusButtonHandler(ActionEvent event) {
-		System.out.println("TODO: add -1 to counter and delete this pritnln");
+		counter.add(-1);
 	}
 }
